@@ -37,7 +37,9 @@ export function Hero() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
+                alert('Button clicked! This should work.');
                 console.log('Quote button clicked!');
                 const contactSection = document.getElementById('contact');
                 console.log('Contact section found:', contactSection);
