@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Simple Test Form</title>
+    <title>Formspree Test</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,16 +45,10 @@
 </head>
 
 <body>
-    <h1>Simple Quote Form Test</h1>
-    <p>This is a minimal test form to see if Netlify Forms is working.</p>
+    <h1>Formspree Test Form</h1>
+    <p>This form uses Formspree instead of Netlify Forms.</p>
 
-    <form name="simple-test" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="simple-test" />
-
-        <div style="display: none;">
-            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-        </div>
-
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -70,11 +64,11 @@
             <textarea id="message" name="message" rows="4" required></textarea>
         </div>
 
-        <button type="submit">Submit Test</button>
+        <button type="submit">Submit to Formspree</button>
     </form>
 
-    <p><a href="/test-form.html">Go to Original Test Form</a></p>
-    <p><a href="/">Go to Main Site</a></p>
+    <p><strong>Note:</strong> This form needs a Formspree form ID to work. We'll set that up if Netlify Forms continues
+        to fail.</p>
 </body>
 
 </html>
