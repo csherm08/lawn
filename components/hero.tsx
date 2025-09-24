@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Star } from "lucide-react"
 
@@ -37,16 +39,11 @@ export function Hero() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('Button clicked! This should work.');
-                console.log('Quote button clicked!');
+              onClick={() => {
                 const contactSection = document.getElementById('contact');
-                console.log('Contact section found:', contactSection);
                 if (contactSection) {
                   contactSection.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                  console.log('Contact section not found, trying alternative...');
                   window.location.href = '/#contact';
                 }
               }}
