@@ -38,7 +38,15 @@ export function Hero() {
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
               onClick={() => {
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                console.log('Quote button clicked!');
+                const contactSection = document.getElementById('contact');
+                console.log('Contact section found:', contactSection);
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  console.log('Contact section not found, trying alternative...');
+                  window.location.href = '/#contact';
+                }
               }}
             >
               Get Free Quote

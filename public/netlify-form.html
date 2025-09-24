@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netlify Form Detection</title>
+</head>
+<body>
+    <!-- This form is used by Netlify to detect the form during build -->
+    <form name="quote-request" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="first-name" />
+        <input type="text" name="last-name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <input type="text" name="address" />
+        <textarea name="project-details"></textarea>
+        <input type="hidden" name="form-name" value="quote-request" />
+        <p style="display: none;">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+    </form>
+</body>
+</html>
