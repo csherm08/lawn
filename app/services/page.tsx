@@ -142,7 +142,14 @@ export default function ServicesPage() {
             to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="gap-2">
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="gap-2"
+              onClick={() => {
+                window.location.href = 'tel:5164090940';
+              }}
+            >
               <Phone className="h-5 w-5" />
               Call (516) 409-0940
             </Button>
@@ -150,6 +157,9 @@ export default function ServicesPage() {
               size="lg"
               variant="outline"
               className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              onClick={() => {
+                window.location.href = '/#contact';
+              }}
             >
               Request Quote Online
             </Button>

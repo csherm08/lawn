@@ -22,23 +22,41 @@ export function Contact() {
                 <CardTitle className="text-2xl">Get Your Free Quote</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input placeholder="First Name" />
-                  <Input placeholder="Last Name" />
-                </div>
-                <Input placeholder="Email Address" type="email" />
-                <Input placeholder="Phone Number" type="tel" />
-                <Input placeholder="Property Address" />
-                <Textarea
-                  placeholder="Tell us about your project. What services are you interested in?"
-                  className="min-h-[120px]"
-                />
-                <Button className="w-full" size="lg">
-                  Get Free Quote
-                </Button>
-                <p className="text-sm text-muted-foreground text-center">
-                  We'll respond within 24 hours with your personalized quote.
-                </p>
+                <form 
+                  name="quote-request" 
+                  method="POST" 
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  className="space-y-6"
+                >
+                  {/* Hidden field for Netlify */}
+                  <input type="hidden" name="form-name" value="quote-request" />
+                  <div style={{ display: 'none' }}>
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <Input placeholder="First Name" name="first-name" required />
+                    <Input placeholder="Last Name" name="last-name" required />
+                  </div>
+                  <Input placeholder="Email Address" type="email" name="email" required />
+                  <Input placeholder="Phone Number" type="tel" name="phone" required />
+                  <Input placeholder="Property Address" name="address" required />
+                  <Textarea
+                    placeholder="Tell us about your project. What services are you interested in?"
+                    className="min-h-[120px]"
+                    name="project-details"
+                    required
+                  />
+                  <Button type="submit" className="w-full" size="lg">
+                    Get Free Quote
+                  </Button>
+                  <p className="text-sm text-muted-foreground text-center">
+                    We'll respond within 24 hours with your personalized quote.
+                  </p>
+                </form>
               </CardContent>
             </Card>
           </div>

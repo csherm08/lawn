@@ -33,11 +33,25 @@ export function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="hidden sm:flex items-center space-x-2 bg-transparent">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="hidden sm:flex items-center space-x-2 bg-transparent"
+              onClick={() => {
+                window.location.href = 'tel:5164090940';
+              }}
+            >
               <Phone className="h-4 w-4" />
               <span>516-409-0940</span>
             </Button>
-            <Button className="hidden sm:inline-flex">Get Free Quote</Button>
+            <Button 
+              className="hidden sm:inline-flex"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Get Free Quote
+            </Button>
             <Button variant="ghost" size="sm" className="md:hidden">
               <Menu className="h-5 w-5" />
             </Button>

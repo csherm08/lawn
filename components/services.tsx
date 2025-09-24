@@ -86,7 +86,13 @@ export function Services() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="px-8">
+          <Button 
+            size="lg" 
+            className="px-8"
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Get Custom Quote for Your Project
           </Button>
         </div>
