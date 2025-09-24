@@ -21,93 +21,12 @@ export function Contact() {
               <CardHeader>
                 <CardTitle className="text-2xl">Get Your Free Quote</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <form
-                  name="quote-request"
-                  method="POST"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
-                  className="space-y-6"
-                >
-                  <input type="hidden" name="form-name" value="quote-request" />
-                  
-                  <div style={{ display: 'none' }}>
-                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <p>
-                      <label className="block text-sm font-medium mb-2">First Name:</label>
-                      <input
-                        type="text"
-                        name="first-name"
-                        required
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      />
-                    </p>
-                    <p>
-                      <label className="block text-sm font-medium mb-2">Last Name:</label>
-                      <input
-                        type="text"
-                        name="last-name"
-                        required
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      />
-                    </p>
-                  </div>
-                  
-                  <p>
-                    <label className="block text-sm font-medium mb-2">Email Address:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    />
-                  </p>
-                  
-                  <p>
-                    <label className="block text-sm font-medium mb-2">Phone Number:</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      required
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    />
-                  </p>
-                  
-                  <p>
-                    <label className="block text-sm font-medium mb-2">Property Address:</label>
-                    <input
-                      type="text"
-                      name="address"
-                      required
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    />
-                  </p>
-                  
-                  <p>
-                    <label className="block text-sm font-medium mb-2">Project Details:</label>
-                    <textarea
-                      name="project-details"
-                      required
-                      className="min-h-[120px] flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    ></textarea>
-                  </p>
-                  
-                  <p>
-                    <button 
-                      type="submit" 
-                      className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 w-full"
-                    >
-                      Get Free Quote
-                    </button>
-                  </p>
-                  
-                  <p className="text-sm text-muted-foreground text-center">
-                    We'll respond within 24 hours with your personalized quote.
-                  </p>
-                </form>
+              <CardContent className="p-0">
+                <iframe 
+                  src="/contact-form.html" 
+                  className="w-full h-[600px] border-0 rounded-lg"
+                  title="Contact Form"
+                />
               </CardContent>
             </Card>
           </div>
