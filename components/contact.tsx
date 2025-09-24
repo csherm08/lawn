@@ -24,8 +24,12 @@ export function Contact() {
               <CardContent className="p-0">
                 <iframe 
                   src="/contact-form.html" 
-                  className="w-full h-[600px] border-0 rounded-lg"
+                  className="w-full h-[700px] border-0"
                   title="Contact Form"
+                  style={{
+                    background: 'transparent',
+                    overflow: 'hidden'
+                  }}
                 />
               </CardContent>
             </Card>
