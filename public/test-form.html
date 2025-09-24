@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Form</title>
+</head>
+<body>
+    <h1>Test Quote Form</h1>
+    <form name="quote-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="quote-request" />
+        
+        <div style="display: none;">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </div>
+        
+        <p>
+            <label>First Name: <input type="text" name="first-name" required /></label>
+        </p>
+        <p>
+            <label>Last Name: <input type="text" name="last-name" required /></label>
+        </p>
+        <p>
+            <label>Email: <input type="email" name="email" required /></label>
+        </p>
+        <p>
+            <label>Phone: <input type="tel" name="phone" required /></label>
+        </p>
+        <p>
+            <label>Address: <input type="text" name="address" required /></label>
+        </p>
+        <p>
+            <label>Project Details: <textarea name="project-details" required></textarea></label>
+        </p>
+        <p>
+            <button type="submit">Submit Test Form</button>
+        </p>
+    </form>
+</body>
+</html>
