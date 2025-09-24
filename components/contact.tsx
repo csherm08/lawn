@@ -22,9 +22,9 @@ export function Contact() {
                 <CardTitle className="text-2xl">Get Your Free Quote</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <form 
-                  name="quote-request" 
-                  method="POST" 
+                <form
+                  name="quote-request"
+                  method="POST"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                   className="space-y-6"
@@ -36,42 +36,42 @@ export function Contact() {
                       Don't fill this out if you're human: <input name="bot-field" />
                     </label>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <input 
-                      type="text" 
-                      placeholder="First Name" 
-                      name="first-name" 
-                      required 
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      name="first-name"
+                      required
                       className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     />
-                    <input 
-                      type="text" 
-                      placeholder="Last Name" 
-                      name="last-name" 
-                      required 
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      name="last-name"
+                      required
                       className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     />
                   </div>
-                  <input 
-                    type="email" 
-                    placeholder="Email Address" 
-                    name="email" 
-                    required 
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    name="email"
+                    required
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   />
-                  <input 
-                    type="tel" 
-                    placeholder="Phone Number" 
-                    name="phone" 
-                    required 
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    name="phone"
+                    required
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   />
-                  <input 
-                    type="text" 
-                    placeholder="Property Address" 
-                    name="address" 
-                    required 
+                  <input
+                    type="text"
+                    placeholder="Property Address"
+                    name="address"
+                    required
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   />
                   <textarea

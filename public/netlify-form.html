@@ -5,7 +5,7 @@
 </head>
 <body>
     <!-- This form is used by Netlify to detect the form during build -->
-    <form name="quote-request" netlify netlify-honeypot="bot-field" hidden>
+    <form name="quote-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
         <input type="text" name="first-name" />
         <input type="text" name="last-name" />
         <input type="email" name="email" />
